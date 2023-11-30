@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/cyz/.cache/nvim/packer_hererocks/2.1.1699392533/share/lua/5.1/?.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1699392533/share/lua/5.1/?/init.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1699392533/lib/luarocks/rocks-5.1/?.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1699392533/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/cyz/.cache/nvim/packer_hererocks/2.1.1699392533/lib/lua/5.1/?.so"
+local package_path_str = "/home/cyz/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?/init.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?.lua;/home/cyz/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/cyz/.cache/nvim/packer_hererocks/2.1.1700008891/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -134,14 +134,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: github-nvim-theme
-time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
-time([[Config for github-nvim-theme]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
